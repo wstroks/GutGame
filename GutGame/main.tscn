@@ -1,0 +1,45 @@
+[gd_scene format=1]
+
+[node name="EventPlayer" type="EventPlayer"]
+
+stream/stream = null
+stream/play = false
+stream/loop = false
+stream/volume_db = 0.0
+stream/pitch_scale = 1.0
+stream/tempo_scale = 1.0
+stream/autoplay = false
+stream/paused = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+motion/scale = Vector2( 1, 1 )
+motion/offset = Vector2( 0, 0 )
+motion/mirroring = Vector2( 0, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="ParallaxLayer"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+scroll/offset = Vector2( 0, 0 )
+scroll/base_offset = Vector2( 0, 0 )
+scroll/base_scale = Vector2( 1, 1 )
+scroll/limit_begin = Vector2( 0, 0 )
+scroll/limit_end = Vector2( 0, 0 )
+scroll/ignore_camera_zoom = true
+
+[node name="TextureFrame" type="TextureFrame" parent="ParallaxLayer/ParallaxBackground"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+stretch_mode = 0
+
+
