@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Quiz/question.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question" type="Node" parent="."]
+
+script/script = ExtResource( 1 )
+fact = "São considerados órgãos anexos ao Trato Gastrointestinal (TGI) aqueles que lançam sua secreção no lúmen do trato digestório. Nesse contexto, qual órgão anexo está conectado à cavidade oral?"
+answer = true
+resposta1 = "a) Pâncreas"
+resposta2 = "b) Tireoide"
+resposta3 = "c) Glândulas Salivares"
+resposta4 = "d) Mucosa Oral"
+bloco = "1"
+
+
