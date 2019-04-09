@@ -12,7 +12,7 @@ func _ready():
 
 func _on_boca_pressed():
 	audio_player.play("Click")
-	get_tree().change_scene("res://Codigo/escolha.tscn")
+	get_tree().change_scene("res://BocaEesofago/apresenta.tscn")
 	pass # replace with function body
 
 

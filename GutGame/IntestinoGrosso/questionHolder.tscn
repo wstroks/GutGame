@@ -1,18 +1,29 @@
 [gd_scene load_steps=2 format=1]
 
-[ext_resource path="res://Quiz/question.gd" type="Script" id=1]
+[ext_resource path="res://IntestinoGrosso/question.gd" type="Script" id=1]
 
 [node name="questionHolder" type="Node"]
 
 [node name="question" type="Node" parent="."]
 
 script/script = ExtResource( 1 )
-fact = "São considerados órgãos anexos ao Trato Gastrointestinal (TGI) aqueles que lançam sua secreção no lúmen do trato digestório. Nesse contexto, qual órgão anexo está conectado à cavidade oral?"
+fact = "Quais são os principais mecanismos protetores do trato gastrointestinal?"
 answer = true
-resposta1 = "a) Pâncreas"
-resposta2 = "b) Tireoide"
-resposta3 = "c) Glândulas Salivares"
-resposta4 = "d) Mucosa Oral"
+resposta1 = "a) Produção de ácido, vômito e constipação."
+resposta2 = "b) Produção de muco, azia e constipação."
+resposta3 = "c) Produção de muco, vômito e diarreia."
+resposta4 = "d) Produção de muco, vômito e constipação."
 bloco = "1"
+
+[node name="question1" type="Node" parent="."]
+
+script/script = ExtResource( 1 )
+fact = "Dentre as funções do cólon, está a absorção de água e de eletrólitos. Entretanto o cólon ainda possui outra função básica, que função é essa?"
+answer = false
+resposta1 = "a) Secreção de hormônios regulatórios da fome."
+resposta2 = "b) Reservatório de material fecal até que haja a excreção."
+resposta3 = "c) Digestão de carboidratos, proteínas e lipídeos."
+resposta4 = "d) Produção de vitaminas e sais minerais."
+bloco = "0"
 
 

@@ -1,18 +1,21 @@
-[gd_scene load_steps=21 format=1]
+[gd_scene load_steps=26 format=1]
 
-[ext_resource path="res://Quiz/quiz.gd" type="Script" id=1]
+[ext_resource path="res://Estomago/quiz.gd" type="Script" id=1]
 [ext_resource path="res://FonteLetras/narutaoTEXTDISLEXICOS.fnt" type="BitmapFont" id=2]
 [ext_resource path="res://FonteLetras/s.fnt" type="BitmapFont" id=3]
-[ext_resource path="res://Quiz/background.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Quiz/falseSlide.tres" type="Animation" id=5]
-[ext_resource path="res://Quiz/trueSlide.tres" type="Animation" id=6]
-[ext_resource path="res://Quiz/questionHolder.tscn" type="PackedScene" id=7]
-[ext_resource path="res://img/feliz.png" type="Texture" id=8]
-[ext_resource path="res://img/triste.png" type="Texture" id=9]
-[ext_resource path="res://img/GutGameHome.png" type="Texture" id=10]
-[ext_resource path="res://FonteLetras/score.fnt" type="BitmapFont" id=11]
+[ext_resource path="res://fonte/dialogo.fnt" type="BitmapFont" id=4]
+[ext_resource path="res://Estomago/background.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Estomago/falseSlide.tres" type="Animation" id=6]
+[ext_resource path="res://Estomago/trueSlide.tres" type="Animation" id=7]
+[ext_resource path="res://Estomago/questionHolder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://img/feliz.png" type="Texture" id=9]
+[ext_resource path="res://img/triste.png" type="Texture" id=10]
+[ext_resource path="res://img/GutGameHome.png" type="Texture" id=11]
+[ext_resource path="res://img/seguir.png" type="Texture" id=12]
+[ext_resource path="res://img/jogar_novamente.png" type="Texture" id=13]
+[ext_resource path="res://img/Menu.png" type="Texture" id=14]
 
-[sub_resource type="CanvasItemShaderGraph" id=1]
+[sub_resource type="CanvasItemShaderGraph" id=11]
 
 _code = {
 "fragment": "vec3 nd2sl0=vec3(1,0.4,0.2);
@@ -29,12 +32,12 @@ _data = {
 "shaders": [ [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [ 0, 2, 0 ], 1, 0, Vector2( 50, 40 ), null, null, [  ], 2, 3, Vector2( 234.683, 74.9355 ), Color( 1, 0.4, 0.2, 1 ), null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ] ]
 }
 
-[sub_resource type="CanvasItemMaterial" id=2]
+[sub_resource type="CanvasItemMaterial" id=12]
 
-shader/shader = SubResource( 1 )
+shader/shader = SubResource( 11 )
 shader/shading_mode = 0
 
-[sub_resource type="CanvasItemShaderGraph" id=3]
+[sub_resource type="CanvasItemShaderGraph" id=13]
 
 _code = {
 "fragment": "vec3 nd2sl0=vec3(1,0.4,0.2);
@@ -51,12 +54,12 @@ _data = {
 "shaders": [ [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [ 0, 2, 0 ], 1, 0, Vector2( 50, 40 ), null, null, [  ], 2, 3, Vector2( 151.683, 10.9355 ), Color( 1, 0.4, 0.2, 1 ), null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ] ]
 }
 
-[sub_resource type="CanvasItemMaterial" id=4]
+[sub_resource type="CanvasItemMaterial" id=14]
 
-shader/shader = SubResource( 3 )
+shader/shader = SubResource( 13 )
 shader/shading_mode = 0
 
-[sub_resource type="CanvasItemShaderGraph" id=5]
+[sub_resource type="CanvasItemShaderGraph" id=15]
 
 _code = {
 "fragment": "vec3 nd2sl0=vec3(1,0.4,0.2);
@@ -73,12 +76,12 @@ _data = {
 "shaders": [ [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ], [ 0, 33, Vector2( -9, -81 ), null, null, [ 0, 2, 0 ], 1, 0, Vector2( 372, -68 ), null, null, [  ], 2, 3, Vector2( 251.683, -35.5 ), Color( 1, 0.4, 0.2, 1 ), null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ] ]
 }
 
-[sub_resource type="CanvasItemMaterial" id=6]
+[sub_resource type="CanvasItemMaterial" id=16]
 
-shader/shader = SubResource( 5 )
+shader/shader = SubResource( 15 )
 shader/shading_mode = 0
 
-[sub_resource type="CanvasItemShaderGraph" id=7]
+[sub_resource type="CanvasItemShaderGraph" id=17]
 
 _code = {
 "fragment": "vec3 nd2sl0=vec3(1,1,1);
@@ -95,12 +98,12 @@ _data = {
 "shaders": [ [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [ 0, 2, 0 ], 1, 0, Vector2( 50, 40 ), null, null, [  ], 2, 3, Vector2( 222.967, 163.367 ), Color( 1, 1, 1, 1 ), null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ] ]
 }
 
-[sub_resource type="CanvasItemMaterial" id=8]
+[sub_resource type="CanvasItemMaterial" id=18]
 
-shader/shader = SubResource( 7 )
+shader/shader = SubResource( 17 )
 shader/shading_mode = 0
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=19]
 
 resource/name = "falseSlide"
 length = 0.5
@@ -126,6 +129,28 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Vector2( 523, 412 ), Vector2( 1021, 412 ) ]
 }
+
+[sub_resource type="CanvasItemShaderGraph" id=10]
+
+_code = {
+"fragment": "vec3 nd2sl0=vec3(1,0.4,0.2);
+float nd2sl1=1;
+COLOR.rgb=nd2sl0;
+",
+"fragment_ofs": 0,
+"light": "",
+"light_ofs": 0,
+"vertex": "",
+"vertex_ofs": 0
+}
+_data = {
+"shaders": [ [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [ 0, 2, 0 ], 1, 0, Vector2( 50, 40 ), null, null, [  ], 2, 3, Vector2( 207, 104 ), Color( 1, 0.4, 0.2, 1 ), null, [  ] ], [ 0, 33, Vector2( 350, 40 ), null, null, [  ], 1, 0, Vector2( 50, 40 ), null, null, [  ] ] ]
+}
+
+[sub_resource type="CanvasItemMaterial" id=20]
+
+shader/shader = SubResource( 10 )
+shader/shading_mode = 0
 
 [node name="Control" type="Control"]
 
@@ -203,7 +228,7 @@ scale = Vector2( 1, 1 )
 
 [node name="trueButton" type="Button" parent="ButtonLayer"]
 
-material/material = SubResource( 2 )
+material/material = SubResource( 12 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -246,7 +271,7 @@ max_lines_visible = -1
 
 [node name="trueButton1" type="Button" parent="ButtonLayer"]
 
-material/material = SubResource( 4 )
+material/material = SubResource( 14 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -290,7 +315,7 @@ max_lines_visible = -1
 
 visibility/behind_parent = true
 visibility/light_mask = 2
-material/material = SubResource( 6 )
+material/material = SubResource( 16 )
 material/use_parent = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -337,7 +362,7 @@ max_lines_visible = -1
 
 visibility/behind_parent = true
 visibility/light_mask = 2
-material/material = SubResource( 6 )
+material/material = SubResource( 16 )
 material/use_parent = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -391,7 +416,7 @@ margin/left = 4.0
 margin/top = 3.0
 margin/right = 1019.0
 margin/bottom = 192.0
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 1, 0.4, 0.2, 1 )
 text = "Questões são exibidas
 "
@@ -406,7 +431,7 @@ max_lines_visible = -1
 [node name="questionBackground" type="Panel" parent="questionText"]
 
 visibility/behind_parent = true
-material/material = SubResource( 8 )
+material/material = SubResource( 18 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -416,7 +441,7 @@ margin/top = -2.0
 margin/right = 1030.0
 margin/bottom = 203.0
 
-[node name="background" parent="." instance=ExtResource( 4 )]
+[node name="background" parent="." instance=ExtResource( 5 )]
 
 layer = -1
 
@@ -425,9 +450,9 @@ layer = -1
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/falseSlide = ExtResource( 5 )
-"anims/falseSlide (copy)" = SubResource( 9 )
-anims/trueSlide = ExtResource( 6 )
+anims/falseSlide = ExtResource( 6 )
+"anims/falseSlide (copy)" = SubResource( 19 )
+anims/trueSlide = ExtResource( 7 )
 playback/active = true
 playback/speed = 3.0
 blend_times = [  ]
@@ -440,7 +465,7 @@ wait_time = 3.0
 one_shot = true
 autostart = false
 
-[node name="questionHolder" parent="." instance=ExtResource( 7 )]
+[node name="questionHolder" parent="." instance=ExtResource( 8 )]
 
 [node name="feliz_1" type="TextureFrame" parent="."]
 
@@ -453,7 +478,7 @@ margin/left = 151.0
 margin/top = 268.0
 margin/right = 358.0
 margin/bottom = 601.0
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 stretch_mode = 0
 
 [node name="feliz_2" type="TextureFrame" parent="."]
@@ -467,7 +492,7 @@ margin/left = 679.0
 margin/top = 266.0
 margin/right = 891.0
 margin/bottom = 599.0
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
 stretch_mode = 0
 
 [node name="triste_1" type="TextureFrame" parent="."]
@@ -481,7 +506,7 @@ margin/left = 153.0
 margin/top = 267.0
 margin/right = 365.0
 margin/bottom = 600.0
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 stretch_mode = 0
 
 [node name="triste_2" type="TextureFrame" parent="."]
@@ -495,7 +520,7 @@ margin/left = 683.0
 margin/top = 261.0
 margin/right = 895.0
 margin/bottom = 594.0
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 stretch_mode = 0
 
 [node name="conquista" type="TextureFrame" parent="."]
@@ -509,8 +534,21 @@ margin/left = 0.0
 margin/top = -7.0
 margin/right = 1042.0
 margin/bottom = 613.0
-texture = ExtResource( 10 )
+texture = ExtResource( 11 )
 stretch_mode = 0
+
+[node name="Panel" type="Panel" parent="."]
+
+visibility/visible = false
+material/material = SubResource( 20 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 443.0
+margin/top = 246.0
+margin/right = 954.0
+margin/bottom = 369.0
 
 [node name="Label" type="Label" parent="."]
 
@@ -519,11 +557,11 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 48.0
-margin/top = 473.0
-margin/right = 325.0
-margin/bottom = 587.0
-custom_fonts/font = ExtResource( 11 )
+margin/left = 452.0
+margin/top = 251.0
+margin/right = 946.0
+margin/bottom = 356.0
+custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0.96875, 0.96875, 0.96875, 1 )
 text = "teste
@@ -535,6 +573,60 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="seguir" type="TextureButton" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 518.0
+margin/top = 432.0
+margin/right = 863.0
+margin/bottom = 506.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 12 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="jogar_n" type="TextureButton" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 393.0
+margin/top = 398.0
+margin/right = 999.0
+margin/bottom = 471.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 13 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="menu" type="TextureButton" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 514.0
+margin/top = 496.0
+margin/right = 859.0
+margin/bottom = 570.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 14 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
 [connection signal="released" from="ButtonLayer/trueButton" to="." method="_on_trueButton_released"]
 
 [connection signal="pressed" from="ButtonLayer/trueButton1" to="." method="_on_trueButton1_pressed"]
@@ -544,5 +636,11 @@ max_lines_visible = -1
 [connection signal="pressed" from="ButtonLayer/falseButton3" to="." method="_on_falseButton3_pressed"]
 
 [connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
+
+[connection signal="pressed" from="seguir" to="." method="_on_seguir_pressed"]
+
+[connection signal="pressed" from="jogar_n" to="." method="_on_jogar_n_pressed"]
+
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
 
 

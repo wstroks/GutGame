@@ -6,6 +6,7 @@ export (NodePath) var animatorPath
 export (NodePath) var timerPath
 export (NodePath) var questionHolderPath
 var count=0
+var numero=0
 onready var questionText=get_node(questionTextPath)
 onready var trueAnswer=get_node(trueAnswerPath)
 onready var falseAnswer=get_node(falseAnswerPath)
@@ -39,7 +40,7 @@ func set_question():
 		get_node("feliz_1").hide()
 		get_node("triste_1").hide()
 		get_node("triste_2").hide()
-		
+		numero+=1
 		get_node("ButtonLayer/trueButton/Label").set_text(text)
 		get_node("ButtonLayer/falseButton1/Label").set_text(text1)
 		get_node("ButtonLayer/trueButton1/Label1").set_text(text2)
@@ -52,12 +53,23 @@ func set_question():
 	else:
 		questionText.set_text("Você acertou " + str(score) + ", Vamos agora pro feedback das questões?!")
 		get_node("conquista").show()
-		get_node("Label").set_text("Você acertou uma quantidade de " + str(score)+" questões!")
+		if(score>=(numero/2)):
+			get_node("Label").set_text("Parabéns passou de fase, acertando uma quantidade de " + str(score)+" de "+ str(numero)+"  questões!! ")
+			get_node("seguir").show()
+		else:
+			get_node("Label").set_text("Você não passou de fase, acertou apenas uma quantidade de " + str(score)+" de "+ str(numero)+"  questões!! Tente de novo!! ")
+			get_node("menu").show()
+			get_node("jogar_n").show()
 		get_node("Label").show()
 		get_node("respostasLayer/truerespostas").hide()
 		get_node("respostasLayer/falserespostas1").hide()
 		get_node("ButtonLayer/trueButton").hide()
 		get_node("ButtonLayer/falseButton1").hide()
+		get_node("ButtonLayer/trueButton1").hide()
+		get_node("ButtonLayer/falseButton3").hide()
+		
+		get_node("Panel").show()
+		
 		
 	if whichQuestion!= null:
 		questionHolder.remove_child(whichQuestion)
@@ -124,4 +136,25 @@ func _on_falseButton3_pressed():
 		
 	animator.play("falseSlide")
 	timer.start()
+	pass # replace with function body
+
+
+func _on_seguir_pressed():
+	audio_player.play("Click")
+	
+
+	get_tree().change_scene("res://Estomago/apresenta.tscn")
+	pass # replace with function body
+
+
+func _on_jogar_n_pressed():
+	audio_player.play("Click")
+	get_tree().change_scene("res://BocaEesofago/quiz.tscn")
+	
+	pass # replace with function body
+
+
+func _on_menu_pressed():
+	audio_player.play("Click")
+	get_tree().change_scene("res://main.tscn")
 	pass # replace with function body

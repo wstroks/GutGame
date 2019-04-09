@@ -1,18 +1,29 @@
 [gd_scene load_steps=2 format=1]
 
-[ext_resource path="res://Quiz/question.gd" type="Script" id=1]
+[ext_resource path="res://IntestinoDelgado/question.gd" type="Script" id=1]
 
 [node name="questionHolder" type="Node"]
 
 [node name="question" type="Node" parent="."]
 
 script/script = ExtResource( 1 )
-fact = "São considerados órgãos anexos ao Trato Gastrointestinal (TGI) aqueles que lançam sua secreção no lúmen do trato digestório. Nesse contexto, qual órgão anexo está conectado à cavidade oral?"
+fact = "Durante todo sistema digestório é necessário um controle da passagem do bolo alimentar, para isso existem estruturas musculares que regulam essa passagem. Como é chamada a estrutura que separa o estômago do intestino delgado?"
 answer = true
-resposta1 = "a) Pâncreas"
-resposta2 = "b) Tireoide"
-resposta3 = "c) Glândulas Salivares"
-resposta4 = "d) Mucosa Oral"
+resposta1 = "a) Esfíncter esofágico"
+resposta2 = "b) Processo pterigóide"
+resposta3 = "c) Esfíncter pilórico"
+resposta4 = "d) Processo esôfago-intestinal"
+bloco = "1"
+
+[node name="question1" type="Node" parent="."]
+
+script/script = ExtResource( 1 )
+fact = "O intestino delgado é a porção mais longa do trato gastrintestinal. Quais são os três segmentos que o compõem? "
+answer = true
+resposta1 = "a) Jejuno, íleo e oblíquo"
+resposta2 = "b) Apêndice, jejuno e íleo"
+resposta3 = "c) Duodeno, jejuno e íleo"
+resposta4 = "d) Íleo, intestino grosso e reto"
 bloco = "1"
 
 

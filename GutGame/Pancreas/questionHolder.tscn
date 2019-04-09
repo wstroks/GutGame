@@ -1,21 +1,11 @@
 [gd_scene load_steps=2 format=1]
 
-[ext_resource path="res://Estomago/question.gd" type="Script" id=1]
+[ext_resource path="res://Pancreas/question.gd" type="Script" id=1]
+
 
 [node name="questionHolder" type="Node"]
 
 [node name="question" type="Node" parent="."]
-
-script/script = ExtResource( 1 )
-fact = "A bactéria Helicobacter pylori é uma das causas de úlceras gástricas. Esse microrganismo não chega a invadir a mucosa gástrica, entretanto secreta proteínas que induzem uma resposta imunológica, o que resulta numa gastrite superficial que pode evoluir para uma gastrite crônica. Que patologia pode ser associada a esta bactéria e a cronificação da gastrite?"
-answer = true
-resposta1 = "a) Câncer gástrico"
-resposta2 = "b) Anemia perniciosa"
-resposta3 = "c) Esquistossomose"
-resposta4 = "d) Colite"
-bloco = "0"
-
-[node name="question1" type="Node" parent="."]
 
 script/script = ExtResource( 1 )
 fact = "No sistema de sinalização parácrina, a célula endócrina está localizada próxima à célula alvo, deste modo, o hormônio alcança a célula alvo através de difusão no fluído intersticial ou pela circulação capilar. A histamina é considerada um importante sinalizador parácrino no trato gastrointestinal por quê?"
@@ -25,5 +15,16 @@ resposta2 = "b) Estimula células parietais a secretar HCl."
 resposta3 = "c) Bloqueia a liberação de HCl pelas células enterocromafins."
 resposta4 = "d) Bloqueia a liberação de HCl pelas células parietais."
 bloco = "0"
+
+[node name="question1" type="Node" parent="."]
+
+script/script = ExtResource( 1 )
+fact = "Nos períodos entre as refeições, a musculatura gástrica uma atividade contrátil intensa que visa empurrar qualquer material que não tenha deixado o estômago durante o processo digestivo. Qual nome é dado a esta atividade?"
+answer = true
+resposta1 = "a) Complexo motor mioelétrico secretório"
+resposta2 = "b) Atividade contrátil regular"
+resposta3 = "c) Complexo motor mioelétrico migratório "
+resposta4 = "d) Bomba pilórica"
+bloco = "1"
 
 

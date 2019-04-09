@@ -1,19 +1,24 @@
 [gd_scene load_steps=26 format=1]
 
-[ext_resource path="res://IntestinoDelgado/quiz.gd" type="Script" id=1]
+[ext_resource path="res://Pancreas/quiz.gd" type="Script" id=1]
 [ext_resource path="res://FonteLetras/narutaoTEXTDISLEXICOS.fnt" type="BitmapFont" id=2]
 [ext_resource path="res://FonteLetras/s.fnt" type="BitmapFont" id=3]
 [ext_resource path="res://fonte/dialogo.fnt" type="BitmapFont" id=4]
-[ext_resource path="res://IntestinoDelgado/background.tscn" type="PackedScene" id=5]
-[ext_resource path="res://IntestinoDelgado/falseSlide.tres" type="Animation" id=6]
-[ext_resource path="res://IntestinoDelgado/trueSlide.tres" type="Animation" id=7]
-[ext_resource path="res://IntestinoDelgado/questionHolder.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Pancreas/background.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Pancreas/falseSlide.tres" type="Animation" id=6]
+[ext_resource path="res://Pancreas/trueSlide.tres" type="Animation" id=7]
+[ext_resource path="res://Pancreas/questionHolder.tscn" type="PackedScene" id=8]
 [ext_resource path="res://img/feliz.png" type="Texture" id=9]
 [ext_resource path="res://img/triste.png" type="Texture" id=10]
 [ext_resource path="res://img/GutGameHome.png" type="Texture" id=11]
 [ext_resource path="res://img/seguir.png" type="Texture" id=12]
 [ext_resource path="res://img/jogar_novamente.png" type="Texture" id=13]
 [ext_resource path="res://img/Menu.png" type="Texture" id=14]
+
+
+
+
+
 
 [sub_resource type="CanvasItemShaderGraph" id=1]
 
