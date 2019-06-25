@@ -26,4 +26,5 @@ func _on_sobr_pressed():
 
 func _on_sair_pressed():
 	audio_player.play_click()
+	
 	pass # Replace with function body.
