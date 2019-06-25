@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://codigo/telas/sobre.gd" type="Script" id=1]
+[ext_resource path="res://img/sobre_tela.png" type="Texture" id=2]
+[ext_resource path="res://img/voltar.png" type="Texture" id=3]
+[ext_resource path="res://img/voltar_2.png" type="Texture" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+margin_top = -7.21008
+margin_right = 1031.0
+margin_bottom = 605.79
+texture = ExtResource( 2 )
+
+[node name="voltar" type="TextureButton" parent="."]
+margin_left = 551.57
+margin_top = 490.284
+margin_right = 896.57
+margin_bottom = 564.284
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

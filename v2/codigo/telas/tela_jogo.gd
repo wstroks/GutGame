@@ -6,7 +6,6 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("animator").play("main")
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -14,20 +13,15 @@ func _ready():
 #	pass
 
 
-func _on_jogar_pressed():
-	
-	audio_player.play_click()
-	get_tree().change_scene("res://codigo/telas/tela_jogo.tscn")
+func _on_multi_pressed():
 	pass # Replace with function body.
 
 
-func _on_sobr_pressed():
+func _on_voltar_pressed():
 	audio_player.play_click()
-	get_tree().change_scene("res://codigo/telas/sobre.tscn")
+	get_tree().change_scene("res://main.tscn")
 	pass # Replace with function body.
 
 
-func _on_sair_pressed():
-	audio_player.play_click()
-	
+func _on_single_pressed():
 	pass # Replace with function body.
