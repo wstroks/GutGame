@@ -21,10 +21,10 @@ margin_bottom = 605.79
 texture = ExtResource( 2 )
 
 [node name="voltar" type="TextureButton" parent="."]
-margin_left = 551.57
-margin_top = 490.284
-margin_right = 896.57
-margin_bottom = 564.284
+margin_left = 764.267
+margin_top = 620.065
+margin_right = 1222.27
+margin_bottom = 714.065
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
 [connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

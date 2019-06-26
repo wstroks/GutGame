@@ -24,4 +24,7 @@ func _on_voltar_pressed():
 
 
 func _on_single_pressed():
+	
+	audio_player.play_click()
+	get_tree().change_scene("res://codigo/telas/single/single.tscn")
 	pass # Replace with function body.

@@ -19,31 +19,31 @@ script = ExtResource( 1 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 1443.0
+margin_bottom = 807.0
 texture = ExtResource( 2 )
 
 [node name="multi" type="TextureButton" parent="."]
-margin_left = 461.444
-margin_top = 328.058
-margin_right = 887.444
-margin_bottom = 401.058
+margin_left = 646.0
+margin_top = 490.0
+margin_right = 1372.0
+margin_bottom = 618.0
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
 
 [node name="single" type="TextureButton" parent="."]
-margin_left = 479.469
-margin_top = 230.722
-margin_right = 905.469
-margin_bottom = 304.722
+margin_left = 645.0
+margin_top = 349.0
+margin_right = 1349.0
+margin_bottom = 474.0
 texture_normal = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 
 [node name="voltar" type="TextureButton" parent="."]
-margin_left = 519.125
-margin_top = 497.494
-margin_right = 864.125
-margin_bottom = 571.494
+margin_left = 761.0
+margin_top = 649.0
+margin_right = 1219.0
+margin_bottom = 743.0
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
 [connection signal="pressed" from="multi" to="." method="_on_multi_pressed"]
