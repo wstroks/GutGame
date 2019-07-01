@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Durante todo sistema digestório é necessário um controle da passagem do bolo alimentar, para isso existem estruturas musculares que regulam essa passagem. Como é chamada a estrutura que separa o estômago do intestino delgado?"
+answer = true
+resposta1 = "Esfíncter esofágico"
+resposta2 = "Processo pterigóide"
+resposta3 = "Esfíncter pilórico"
+resposta4 = "Processo esôfago-intestinal"
+bloco = "1"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O intestino delgado é a porção mais longa do trato gastrintestinal. Quais são os três segmentos que o compõem?"
+answer = true
+resposta1 = "Jejuno, íleo e oblíquo"
+resposta2 = "Apêndice, jejuno e íleo"
+resposta3 = "Duodeno, jejuno e íleo"
+resposta4 = "Íleo, intestino grosso e reto"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Qual local do intestino delgado é secretado a bile e o suco pancreático?"
+answer = true
+resposta1 = "Duodeno"
+resposta2 = "Jejuno"
+resposta3 = "Íleo"
+resposta4 = "Apêndice"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Em qual porção do intestino delgado que ocorre a neutralização do pH do quimo?"
+answer = true
+resposta1 = "Duodeno"
+resposta2 = "Jejuno"
+resposta3 = "Íleo"
+resposta4 = "Apêndice"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O intestino delgado tem como característica histológica um epitélio com vilosidades, constituído por células com microvilosidades. Porque essa histologia é importante?"
+resposta1 = "Para aumentar a secreção de muco"
+resposta2 = "Para aumentar a absorção dos nutrientes"
+resposta3 = "Para diminuir a absorção do bicarbonato e ácido clorídrico"
+resposta4 = "Para facilitar a secreção de enzimas"
+bloco = "0"

@@ -18,6 +18,9 @@ func _on_figado_pressed():
 
 
 func _on_boca_pressed():
+	
+	audio_player.play_click()
+	get_tree().change_scene("res://codigo/singleplayer/Boca/Quiz.tscn")
 	pass # Replace with function body.
 
 

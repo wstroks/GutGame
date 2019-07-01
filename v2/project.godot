@@ -23,6 +23,7 @@ config/icon="res://img/logo.png"
 [autoload]
 
 audio_player="*res://sons/audio_player.tscn"
+new_script="*res://codigo/telas/single/new_script.gd"
 
 [display]
 

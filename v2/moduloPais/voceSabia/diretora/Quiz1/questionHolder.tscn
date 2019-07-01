@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz1/questionaaa.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A dislexia é um deficiência intelectual que acomete o indivíduo desde o seu nascimento, fazendo-o ter problemas de leitura, de escrita e de orientação espacial."
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Quem tem dislexia geralmente só tem problemas na escrita, mas a leitura não é afetada."
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "É garantido por lei que o indivíduos com dislexia têm o direito a ter maior tempo de prova."
+answer = true
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A dislexia vem sendo caracterizada na literatura como uma dificuldade especıífica no processo de aprendizado, pois acaba colaborando diretamente no impacto da aquisição e de compreensão da leitura e da escrita."
+answer = true

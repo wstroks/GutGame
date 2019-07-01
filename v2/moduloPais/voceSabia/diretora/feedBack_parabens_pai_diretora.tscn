@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/feedBack_parabens_pai_diretora.gd" type="Script" id=1]
+[ext_resource path="res://img/voceSabia/pai_feedback_diretora1.png" type="Texture" id=2]
+[ext_resource path="res://img/botoes/seg11_1.png" type="Texture" id=3]
+[ext_resource path="res://img/botoes/seg11_2.png" type="Texture" id=4]
+[ext_resource path="res://img/botoes/icons8-instagram-96.png" type="Texture" id=5]
+[ext_resource path="res://img/botoes/icons8-facebook-96.png" type="Texture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+margin_left = -1.85059
+margin_top = -11.1038
+margin_right = 1028.15
+margin_bottom = 606.896
+texture = ExtResource( 2 )
+
+[node name="seguir" type="TextureButton" parent="."]
+margin_left = 393.436
+margin_top = 486.46
+margin_right = 638.436
+margin_bottom = 591.46
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+
+[node name="instagram" type="TextureButton" parent="."]
+visible = false
+margin_left = 196.166
+margin_top = 512.622
+margin_right = 266.166
+margin_bottom = 566.622
+texture_normal = ExtResource( 5 )
+
+[node name="facebook" type="TextureButton" parent="."]
+visible = false
+margin_left = 75.8755
+margin_top = 505.22
+margin_right = 147.875
+margin_bottom = 573.22
+texture_normal = ExtResource( 6 )
+[connection signal="pressed" from="seguir" to="." method="_on_seguir_pressed"]
+[connection signal="pressed" from="instagram" to="." method="_on_instagram_pressed"]
+[connection signal="pressed" from="facebook" to="." method="_on_facebook_pressed"]
