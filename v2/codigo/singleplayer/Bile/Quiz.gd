@@ -52,12 +52,12 @@ func set_question():
 	else:
 		#questionText.set_text("Você acertou " + str(score) + ", Vamos agora pro feedback das questões?!")
 		if(score>=3):
-			new_script._single("bile",score)
-			get_tree().change_scene("res://codigo/singleplayer/Figado/feedback.tscn")
+			new_script._single("delgado3",score)
+			get_tree().change_scene("res://codigo/singleplayer/Bile/feedback.tscn")
 			
 		else:
-			new_script._single("figado",score)
-			get_tree().change_scene("res://codigo/singleplayer/Figado/feedback.tscn")
+			new_script._single("bile",score)
+			get_tree().change_scene("res://codigo/singleplayer/Bile/feedback.tscn")
 	if whichQuestion!= null:
 		questionHolder.remove_child(whichQuestion)
 

@@ -14,6 +14,9 @@ func _ready():
 
 
 func _on_figado_pressed():
+	
+	audio_player.play_click()
+	get_tree().change_scene("res://codigo/singleplayer/Figado/Quiz.tscn")
 	pass # Replace with function body.
 
 

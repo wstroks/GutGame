@@ -20,8 +20,10 @@ func _ready():
 		
 	if(score>=3):
 		get_node("Seguir").show()
-		get_node("Label").set_text("Parábens você conseguiu avançar e agora vamos para a próxima casa do Intestino Delgado!") 
+		get_node("Label").set_text("Parábens você Completou todo o jogo do Gutgame e com isso obteve conhecimento a respeito de partes do corpo de suma importância!!") 
 	pass # Replace with function body.
+	if(b==1):
+		get_node("Seguir").hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -33,11 +35,10 @@ func _on_Seguir_pressed():
 	if(b==0):
 		get_node("corpo").show()
 		get_node("sentimento").hide()
-		get_node("Label").set_text("Agora estamos avançando para casa 5 do Intestino Delgado, preparado?!")
-		get_node("seta2").show()
+		get_node("Label").set_text("Retorne ao Menu inicial e comece um nova jornada!!")
+		get_node("Seguir").hide()
 		
-	if(b==1):
-		get_tree().change_scene("res://codigo/singleplayer/Delgado/05/Quiz.tscn")
+	
 	b=1
 	
 	
@@ -54,7 +55,7 @@ func _on_jogarNovamente3_pressed():
 		get_node("corpo").show()
 		get_node("sentimento").hide()
 		get_node("jogarNovamente3").hide()
-		get_node("Label").set_text("Você ainda está na mesma posição 4, que corresponde ao Intestino Delgado!")
+		get_node("Label").set_text("Você ainda está na mesma posição 8, que corresponde ao Intestino Grosso!")
 		get_node("Seguir2").show()
 		get_node("seta1").show()
 		a=1
@@ -65,6 +66,6 @@ func _on_jogarNovamente3_pressed():
 
 func _on_Seguir2_pressed():
 	if(a==1):
-		get_tree().change_scene("res://codigo/singleplayer/Delgado/04/Quiz.tscn")
+		get_tree().change_scene("res://codigo/singleplayer/grosso/08/Quiz.tscn")
 	
 	pass # Replace with function body.

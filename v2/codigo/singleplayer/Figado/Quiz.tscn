@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=2]
 
-[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/Quiz.gd" type="Script" id=1]
+[ext_resource path="res://codigo/singleplayer/Figado/Quiz.gd" type="Script" id=1]
 [ext_resource path="res://img/tela_quiz.png" type="Texture" id=2]
 [ext_resource path="res://font/AMPLESOFT MEDIUM.OTF" type="DynamicFontData" id=3]
 [ext_resource path="res://img/voceSabia/verdadeiro.png" type="Texture" id=4]
@@ -10,7 +10,7 @@
 [ext_resource path="res://moduloPais/voceSabia/diretora/Quiz1/trueSlide.tres" type="Animation" id=8]
 [ext_resource path="res://img/feliz.png" type="Texture" id=9]
 [ext_resource path="res://img/triste.png" type="Texture" id=10]
-[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionHolder.tscn" type="PackedScene" id=11]
+[ext_resource path="res://codigo/singleplayer/Figado/questionHolder.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30

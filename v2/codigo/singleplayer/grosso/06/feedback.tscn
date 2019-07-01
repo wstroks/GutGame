@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://codigo/singleplayer/Delgado/04/feedback.gd" type="Script" id=1]
+[ext_resource path="res://codigo/singleplayer/grosso/06/feedback.gd" type="Script" id=1]
 [ext_resource path="res://img/tela_feeedback.png" type="Texture" id=2]
 [ext_resource path="res://img/feeed_corpo.png" type="Texture" id=3]
 [ext_resource path="res://img/feliz_telafeed.png" type="Texture" id=4]
@@ -90,18 +90,18 @@ texture_hover = ExtResource( 7 )
 
 [node name="seta1" type="TextureRect" parent="."]
 visible = false
-margin_left = 361.144
-margin_top = 455.496
-margin_right = 435.144
-margin_bottom = 526.496
+margin_left = 237.509
+margin_top = 458.75
+margin_right = 311.509
+margin_bottom = 529.75
 texture = ExtResource( 12 )
 
 [node name="seta2" type="TextureRect" parent="."]
 visible = false
-margin_left = 286.312
-margin_top = 465.257
-margin_right = 360.312
-margin_bottom = 536.257
+margin_left = 409.947
+margin_top = 475.017
+margin_right = 483.947
+margin_bottom = 546.017
 texture = ExtResource( 12 )
 [connection signal="pressed" from="Seguir" to="." method="_on_Seguir_pressed"]
 [connection signal="pressed" from="Menu" to="." method="_on_Menu_pressed"]

@@ -33,11 +33,11 @@ func _on_Seguir_pressed():
 	if(b==0):
 		get_node("corpo").show()
 		get_node("sentimento").hide()
-		get_node("Label").set_text("Agora estamos avançando para casa 5 do Intestino Delgado, preparado?!")
+		get_node("Label").set_text("Agora estamos avançando para casa 3 do Intestino Delgado, preparado?!")
 		get_node("seta2").show()
 		
 	if(b==1):
-		get_tree().change_scene("res://codigo/singleplayer/Delgado/05/Quiz.tscn")
+		get_tree().change_scene("res://codigo/singleplayer/Delgado/03/Quiz.tscn")
 	b=1
 	
 	
@@ -54,7 +54,7 @@ func _on_jogarNovamente3_pressed():
 		get_node("corpo").show()
 		get_node("sentimento").hide()
 		get_node("jogarNovamente3").hide()
-		get_node("Label").set_text("Você ainda está na mesma posição 4, que corresponde ao Intestino Delgado!")
+		get_node("Label").set_text("Você ainda está na mesma posição 2, que corresponde a Bile!")
 		get_node("Seguir2").show()
 		get_node("seta1").show()
 		a=1
@@ -65,6 +65,6 @@ func _on_jogarNovamente3_pressed():
 
 func _on_Seguir2_pressed():
 	if(a==1):
-		get_tree().change_scene("res://codigo/singleplayer/Delgado/04/Quiz.tscn")
+		get_tree().change_scene("res://codigo/singleplayer/Bile/Quiz.tscn")
 	
 	pass # Replace with function body.

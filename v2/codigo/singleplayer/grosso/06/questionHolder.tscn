@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Ascaris lumbricoides é um parasita que causa uma verminose popularmente conhecida por lombriga. Os sintomas podem estar ausentes, ou o paciente pode apresentar diarreia, náuseas, falta de apetite. Quando o paciente apresenta um grande número de vermes, pode haver obstrução intestinal e contaminação das vias respiratórias, fazendo o indivíduo apresentar tosse, catarro com sangue ou crise de asma. Se uma larva obstruir o colédoco pode haver icterícia obstrutiva. Qual melhor maneira de se evitar a contaminação com esse parasita?"
+answer = true
+resposta1 = "Saneamento básico"
+resposta2 = "Tomar bastante líquidos"
+resposta3 = "Evitar comer carne de porco"
+resposta4 = "Não ter animais de estimação"
+bloco = "0"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Quais são os principais mecanismos protetores do trato gastrointestinal?"
+answer = true
+resposta1 = "Produção de ácido, vômito e constipação"
+resposta2 = "Produção de muco, azia e constipação"
+resposta3 = "Produção de muco, vômito e diarreia"
+resposta4 = "Produção de muco, vômito e constipação"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Dentre as funções do cólon, está a absorção de água e de eletrólitos. Entretanto o cólon ainda possui outra função básica, que função é essa?"
+resposta1 = "Secreção de hormônios regulatórios da fome"
+resposta2 = "Reservatório de material fecal até que haja a excreção"
+resposta3 = "Digestão de carboidratos, proteínas e lipídeos"
+resposta4 = "Produção de vitaminas e sais minerais"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O cólon difere-se do intestino delgado anatômica e funcionalmente. Na primeira porção, encontra-se o ceco, onde está o apêndice vermiforme. Em seguida encontra-se o cólon e finalmente o reto. Quais os nomes das quatro porções do cólon?"
+answer = true
+resposta1 = "Ascendente, transverso, descendente e sigmoide"
+resposta2 = "Ascendente, transverso, descendente e retal"
+resposta3 = "Cecal, ascendente, descendente e retal"
+resposta4 = "Cecal, reverso, ascendente e descendente"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Assim como em outros órgão do sistema digestório, o cólon possui musculatura lisa em sentido longitudinal e em sentido circular. A musculatura longitudinal do cólon é centrada em três faixas que correm do ceco até o reto. Como são denominadas essas faixas musculares?"
+resposta1 = "Taenia solium"
+resposta2 = "Tênia"
+resposta3 = "Vermicularis"
+resposta4 = "Nenhuma das anteriores"
+bloco = "0"
