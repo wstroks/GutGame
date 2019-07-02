@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = " O cólon está envolvido em algumas funções motoras como: a) mistura, amassamento e lubrificação do conteúdo colônio; b) propulsão cefalocaudal do conteúdo colônico; c) expulsão das fezes (envolvendo o reto e o canal anal). No cólon ascendente, a movimentação renova frequentemente o contato do conteúdo colônico com a mucosa. Qual a vantagem disso?"
+answer = true
+resposta1 = "Diminuição do n° de bactérias e infecções"
+resposta2 = "Diminuição das cólicas intestinais"
+resposta3 = "Otimização da absorção de água e eletrólitos"
+resposta4 = "Otimização da ação de bactérias ingeridas na dieta"
+bloco = "1"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A intolerância à lactose é causada pela ausência da enzima lactase. Essa enzima, produzida pelas células com borda em escova, é responsável por quebrar a lactose (formando glicose + galactose). Sem passar pela hidrólise no intestino delgado, a lactose chega intacta ao cólon, o que aumenta a retenção de água. Que consequência essa retenção causa?"
+answer = true
+resposta1 = "Sede"
+resposta2 = "Fome"
+resposta3 = "Diarreia"
+resposta4 = "Sangue nas fezes"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O apêndice vermiforme está localizado no início do intestino grosso, conectado ao ceco. É uma estrutura tubular, fechada na extremidade livre. Mede aproximadamente de 5 a 10cm de comprimento. Embora sua retirada seja comum em decorrência de inflamações, o apêndice está ligado a que tipo de função?"
+resposta1 = "Nenhuma, sua retirada não acarreta em nenhuma perda"
+resposta2 = "Secreção, trata-se de um amontoado de células brushborder"
+resposta3 = " Mecânica, sua presença diminui a velocidade de passagem do conteúdo colônico"
+resposta4 = "Linfóide, trata-se de tecido linfóide agregado a tecido conjuntivo na mucosa gastrointestinal"
+bloco = "1"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Compreende-se displasia como alteração no crescimento e diferenciação celular, no qual ocorre uma perda de diferenciação nas células afetadas. Quanto maior a proliferação celular, menor a diferenciação. No cólon a displasia geralmente é detectada em pacientes que tiveram doenças como colite ulcerativa durante anos. Com a evolução da displasia em células do cólon, que tipo de doença esse paciente pode desenvolver?"
+answer = true
+resposta1 = "Câncer colorretal"
+resposta2 = "Apendicite"
+resposta3 = "Parasitoses"
+resposta4 = "Amebíase ulcerativa"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A doença de Hirschsprung ou Megacolon Congênito é caracterizada pela ausência do sistema nervoso entérico, principalmente no cólon distal (descendente e sigmóide) e no esfíncter anal interno. Os segmentos envolvidos apresentam tônus aumentado, havendo deficiência na atividade propulsiva. Nos indivíduos afetados pela doença, o reflexo de defecação é inexistente, isso promove que consequência?"
+resposta1 = "Diarreia"
+resposta2 = "Constipação Intestinal"
+resposta3 = "Paraplegia"
+resposta4 = "Alteração no Sistema Nervoso Central"
+bloco = "0"

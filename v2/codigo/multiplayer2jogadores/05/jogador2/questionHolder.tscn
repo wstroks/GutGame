@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Ao longo do trato gastrointestinal há uma rede própria de nervos chamada de Sistema Nervoso Entérico (SNE), além dos nervos do sistema nervoso autônomo. O SNE é dividido em duas redes distintas, quais são elas e suas funções, respectivamente?"
+answer = true
+resposta1 = "Plexo mioentérico e plexo submucoso, com função de controle motor e de secreção do sistema digestório"
+resposta2 = "Plexo submucoso e plexo mioentérico, com função de controle motor e de secreção do sistema digestório"
+resposta3 = "Sistema nervoso simpático e parassimpático, com função de controle motor e de secreção do sistema digestório"
+resposta4 = "Sistema nervoso parassimpático e simpático, com função de controle motor e de secreção do sistema digestório"
+bloco = "0"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O Sistema Nervoso Entérico regula uma série de alvos dentro do sistema digestório. A acetilcolina, neurotransmissor do sistema nervoso parassimpático, que se liga à receptores neste sistema, acelera a motilidade do trato gastrintestinal, aumentando contração da musculatura lisa, secreções e relaxamento dos esfíncteres. Na presença de dor abdominal, podem ser utilizados fármacos que contenham escopolamina para reduzir a motilidade do trato gastrintestinal. Como esse tipo de fármaco atua?"
+answer = true
+resposta1 = "Aumentando a secreção de acetilcolina na fenda sináptica"
+resposta2 = "Degradando a acetilcolina na fenda sináptica"
+resposta3 = "Bloqueando os receptores de acetilcolina nas células"
+resposta4 = "Aumentando o tempo de atividade da acetilcolina nas células"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "No duodeno as células S são responsáveis por secretar um hormônio chamado Secretina, que estimula o ducto pancreático a secretar o suco pancreático rico em...., cuja a função é?"
+answer = true
+resposta1 = "Ácido clorídrico, torna o pH do quimo proveniente do estômago mais ácido para melhor digestão"
+resposta2 = "Bicarbonato, torna o pH do quimo proveniente do estômago mais ácido para melhor digestão"
+resposta3 = "Bicarbonato, neutraliza o pH do quimo proveniente do estômago para melhor funcionamento enzimático"
+resposta4 = "Ácido clorídrico, neutraliza o pH do quimo proveniente do estômago para melhor funcionamento enzimático"
+bloco = "1"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A bile e o suco pancreático auxiliam na digestão de lipídeos e proteínas, respectivamente. As células I do intestino delgado secretam um hormônio que estimula a contração da vesícula biliar e do ducto pancreático na presença dessas macromoléculas. Qual o nome desse hormônio?"
+answer = true
+resposta1 = "Somatostatina"
+resposta2 = "Adrenalina"
+resposta3 = "Colecistocinina"
+resposta4 = "Gastrina"
+bloco = "1"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Um aluno da universidade relatou desconforto abdominal, diarreia e gases após ir em festival do queijo em uma cidade do interior do Rio Grande do Sul. Após este episódio, algumas semanas depois, sentiu os mesmos sintomas ao ingerir iogurte e comer uma torrada com queijo e requeijão. Esses sintomas podem estar relacionados com uma deficiência em qual enzima?"
+resposta1 = "Sacarase"
+resposta2 = "Lactase"
+resposta3 = "Maltase"
+resposta4 = "Isomaltase"
+bloco = "0"

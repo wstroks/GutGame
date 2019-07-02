@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Qual a principal secreção do fígado que tem função digestiva?"
+answer = true
+resposta1 = "Bile"
+resposta2 = "Insulina"
+resposta3 = "Glucagon"
+resposta4 = "Ácido clorídrico"
+bloco = "0"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = " O fígado está localizado em que região do corpo humano?"
+answer = true
+resposta1 = "Região Encefálica"
+resposta2 = "Região Sacral"
+resposta3 = "Abdômen"
+resposta4 = "Tórax"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Antes dos nutrientes absorvidos no intestino chegarem a circulação sistêmica, eles passam pelo fígado numa circulação especial. Qual é o nome do vaso que drena o sangue do sistema digestivo para o fígado?"
+resposta1 = "Artéria hepática"
+resposta2 = "Veia porta hepática"
+resposta3 = "Veia hepática"
+resposta4 = "Veia mesentérica inferior"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A esteatose hepática, popularmente conhecida como fígado gorduroso, é caracterizada pelo acúmulo de gordura nos hepatócitos, as células do fígado, o que pode causar danos irreversíveis. Quais são as duas principais causas de esteatose hepática?"
+answer = true
+resposta1 = "Diabetes e hipertensão"
+resposta2 = "Obesidade e alcoolismo"
+resposta3 = "Alcoolismo e diabetes"
+resposta4 = "Hipertensão e obesidade"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A cirrose é uma doença crônica e progressiva que afeta o fígado, substituindo tecido normal por tecido fibroso (como o de cicatrizes). Assim, o fígado deixa de funcionar normalmente e os principais sintomas são cansaço excessivo, inchaço abdominal e pele amarelada. Quais são as duas principais causas de cirrose?"
+answer = true
+resposta1 = "Diabetes e hepatite"
+resposta2 = "Icterícia e diabetes"
+resposta3 = "Alcoolismo e hepatite"
+resposta4 = "Hipertensão e icterícia"
+bloco = "1"

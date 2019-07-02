@@ -24,6 +24,7 @@ config/icon="res://img/logo.png"
 
 audio_player="*res://sons/audio_player.tscn"
 new_script="*res://codigo/telas/single/new_script.gd"
+multi_player="*res://codigo/multiplayer2jogadores/multi_player.gd"
 
 [display]
 

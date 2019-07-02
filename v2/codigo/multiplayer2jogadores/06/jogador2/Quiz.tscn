@@ -1,0 +1,255 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://codigo/multiplayer2jogadores/06/jogador2/Quiz.gd" type="Script" id=1]
+[ext_resource path="res://img/tela_quiz.png" type="Texture" id=2]
+[ext_resource path="res://font/AMPLESOFT MEDIUM.OTF" type="DynamicFontData" id=3]
+[ext_resource path="res://img/voceSabia/verdadeiro.png" type="Texture" id=4]
+[ext_resource path="res://img/voceSabia/falso.png" type="Texture" id=5]
+[ext_resource path="res://img/quiz_texto.png" type="Texture" id=6]
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz1/falseSlide.tres" type="Animation" id=7]
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz1/trueSlide.tres" type="Animation" id=8]
+[ext_resource path="res://img/feliz.png" type="Texture" id=9]
+[ext_resource path="res://img/triste.png" type="Texture" id=10]
+[ext_resource path="res://codigo/multiplayer2jogadores/06/jogador2/questionHolder.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+
+[sub_resource type="StyleBoxTexture" id=3]
+
+[sub_resource type="StyleBoxTexture" id=4]
+
+[sub_resource type="StyleBoxTexture" id=5]
+
+[sub_resource type="StyleBoxTexture" id=6]
+
+[sub_resource type="StyleBoxTexture" id=7]
+
+[sub_resource type="DynamicFont" id=8]
+size = 28
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 28
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 39
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 39
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+questionTextPath = NodePath("questionText")
+trueAnswerPath = NodePath("answerLayer/trueAnswer")
+falseAnswerPath = NodePath("answerLayer/falseAnswer")
+animatorPath = NodePath("animator")
+timerPath = NodePath("Timer")
+questionHolderPath = NodePath("questionHolder")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+margin_top = -1.85059
+margin_right = 1024.0
+margin_bottom = 617.149
+texture = ExtResource( 2 )
+
+[node name="questionText" type="Label" parent="."]
+margin_left = 17.0
+margin_top = 8.0
+margin_right = 1407.0
+margin_bottom = 165.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="buttonLayer" type="CanvasLayer" parent="."]
+
+[node name="trueButton" type="Button" parent="buttonLayer"]
+visible = false
+margin_left = -0.403687
+margin_top = 267.33
+margin_right = 514.596
+margin_bottom = 593.33
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+icon = ExtResource( 4 )
+
+[node name="falseButton" type="Button" parent="buttonLayer"]
+visible = false
+margin_left = 516.95
+margin_top = 267.1
+margin_right = 984.95
+margin_bottom = 549.1
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+icon = ExtResource( 5 )
+
+[node name="falseButton2" type="TextureButton" parent="buttonLayer"]
+margin_left = 736.821
+margin_top = 216.489
+margin_right = 1386.82
+margin_bottom = 465.489
+texture_normal = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="buttonLayer/falseButton2"]
+margin_left = 3.79492
+margin_top = 7.58954
+margin_right = 653.795
+margin_bottom = 252.59
+custom_fonts/font = SubResource( 8 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="falseButton3" type="TextureButton" parent="buttonLayer"]
+margin_left = 736.821
+margin_top = 497.302
+margin_right = 1386.82
+margin_bottom = 746.302
+texture_normal = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="buttonLayer/falseButton3"]
+margin_left = -3.79468
+margin_top = 3.79492
+margin_right = 646.205
+margin_bottom = 248.795
+custom_fonts/font = SubResource( 8 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="trueButton2" type="TextureButton" parent="buttonLayer"]
+margin_left = 29.0
+margin_top = 215.0
+margin_right = 679.0
+margin_bottom = 464.0
+texture_normal = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="buttonLayer/trueButton2"]
+margin_right = 650.0
+margin_bottom = 247.0
+custom_fonts/font = SubResource( 9 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="trueButton3" type="TextureButton" parent="buttonLayer"]
+margin_left = 31.65
+margin_top = 492.7
+margin_right = 681.65
+margin_bottom = 741.7
+texture_normal = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="buttonLayer/trueButton3"]
+margin_left = 5.0
+margin_top = 3.0
+margin_right = 644.0
+margin_bottom = 250.0
+custom_fonts/font = SubResource( 9 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="answerLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="trueAnswer" type="Label" parent="answerLayer"]
+margin_left = 30.0
+margin_top = 212.0
+margin_right = 682.0
+margin_bottom = 745.0
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Você Acertou a resposta"
+align = 1
+
+[node name="falseAnswer" type="Label" parent="answerLayer"]
+margin_left = 734.0
+margin_top = 214.0
+margin_right = 1386.0
+margin_bottom = 753.0
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Você errou a resposta"
+align = 1
+
+[node name="animator" type="AnimationPlayer" parent="."]
+anims/falseSlide = ExtResource( 7 )
+anims/trueSlide = ExtResource( 8 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="feliz" type="TextureRect" parent="."]
+visible = false
+margin_left = 230.087
+margin_top = 402.24
+margin_right = 442.087
+margin_bottom = 735.24
+texture = ExtResource( 9 )
+
+[node name="triste" type="TextureRect" parent="."]
+visible = false
+margin_left = 230.393
+margin_top = 392.905
+margin_right = 442.393
+margin_bottom = 725.905
+texture = ExtResource( 10 )
+
+[node name="feliz2" type="TextureRect" parent="."]
+visible = false
+margin_left = 957.802
+margin_top = 409.829
+margin_right = 1169.8
+margin_bottom = 742.829
+texture = ExtResource( 9 )
+
+[node name="triste2" type="TextureRect" parent="."]
+visible = false
+margin_left = 967.441
+margin_top = 409.523
+margin_right = 1179.44
+margin_bottom = 742.523
+texture = ExtResource( 10 )
+
+[node name="Nome" type="Label" parent="."]
+margin_left = 525.0
+margin_top = 168.0
+margin_right = 891.0
+margin_bottom = 218.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="questionHolder" parent="." instance=ExtResource( 11 )]
+[connection signal="pressed" from="buttonLayer/trueButton" to="." method="_on_trueButton_pressed"]
+[connection signal="pressed" from="buttonLayer/falseButton" to="." method="_on_falseButton_pressed"]
+[connection signal="pressed" from="buttonLayer/falseButton2" to="." method="_on_falseButton2_pressed"]
+[connection signal="pressed" from="buttonLayer/falseButton3" to="." method="_on_falseButton3_pressed"]
+[connection signal="pressed" from="buttonLayer/trueButton2" to="." method="_on_trueButton2_pressed"]
+[connection signal="pressed" from="buttonLayer/trueButton3" to="." method="_on_trueButton3_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

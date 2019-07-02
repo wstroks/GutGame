@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "São considerados órgãos anexos ao Trato Gastrointestinal (TGI) aqueles que lançam sua secreção no lúmen do trato digestório. Nesse contexto, qual órgão anexo está conectado à cavidade oral?"
+answer = true
+resposta1 = "Pâncreas"
+resposta2 = "Tireoide"
+resposta3 = "Glândulas Salivares"
+resposta4 = "Mucosa Oral"
+bloco = "1"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Em uma situação de luta ou fuga, as glândulas suprarrenais secretam adrenalina, principal neurotransmissor do sistema simpático. Na cavidade oral, o fluxo secretor tende a mudar em virtude da vasoconstrição promovida pela adrenalina. Cite o efeito da vasoconstrição nas glândulas salivares."
+resposta1 = "Aumento da salivação"
+resposta2 = "Diminuição da salivação"
+resposta3 = "Não possui efeito nas glândulas salivares"
+resposta4 = "Degradação da saliva"
+bloco = "0"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Nos seres humanos, a digestão dos carboidratos é iniciada ainda na cavidade oral através de uma enzima presente na saliva. Qual o nome dessa enzima?"
+answer = true
+resposta1 = "Alfa-amilase ou ptialina"
+resposta2 = "Beta-amilase"
+resposta3 = "Carboxilase"
+resposta4 = "Enteropeptidase"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Qual o nome do processo em que o bolo alimentar passa da boca para o estômago através do esôfago?"
+answer = true
+resposta1 = "Peristalse Reversa"
+resposta2 = "Evacuação"
+resposta3 = "Deglutição"
+resposta4 = "Mastigação"
+bloco = "1"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O esôfago é um tubo muscular que mede aproximadamente 15cm de comprimento e se estende da orofaringe ao estômago. Qual o nome do esfíncter existente entre a porção inferior do esôfago e o estômago?"
+answer = true
+resposta1 = "Esfíncter esofágico inferior"
+resposta2 = "Esfíncter esofágico superior"
+resposta3 = "Esfíncter esoestomacal"
+resposta4 = "Esfíncter intraesofágico"
+bloco = "0"

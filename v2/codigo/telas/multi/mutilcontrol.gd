@@ -13,21 +13,22 @@ func _ready():
 #	pass
 
 
-func _on_multi_pressed():
+func _on_2jogadores_pressed():
 	audio_player.play_click()
-	get_tree().change_scene("res://codigo/telas/multi/mutilcontrol.tscn")
+	get_tree().change_scene("res://codigo/multiplayer2jogadores/TelainicialMulti.tscn")
 	
+	pass # Replace with function body.
+
+
+func _on_3jogadores_pressed():
+	pass # Replace with function body.
+
+
+func _on_4jogadores_pressed():
 	pass # Replace with function body.
 
 
 func _on_voltar_pressed():
 	audio_player.play_click()
-	get_tree().change_scene("res://main.tscn")
-	pass # Replace with function body.
-
-
-func _on_single_pressed():
-	
-	audio_player.play_click()
-	get_tree().change_scene("res://codigo/telas/single/single.tscn")
+	get_tree().change_scene("res://codigo/telas/tela_jogo.tscn")
 	pass # Replace with function body.

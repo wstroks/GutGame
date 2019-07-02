@@ -1,0 +1,66 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://codigo/telas/multi/mutilcontrol.gd" type="Script" id=1]
+[ext_resource path="res://img/fundo.png" type="Texture" id=2]
+[ext_resource path="res://img/feeed_corpo.png" type="Texture" id=3]
+[ext_resource path="res://img/2_jogadores1.png" type="Texture" id=4]
+[ext_resource path="res://img/2_jogadores2.png" type="Texture" id=5]
+[ext_resource path="res://img/3jogadores2.png" type="Texture" id=6]
+[ext_resource path="res://img/3jogadores1.png" type="Texture" id=7]
+[ext_resource path="res://img/4jogadores1.png" type="Texture" id=8]
+[ext_resource path="res://img/4jogadores2.png" type="Texture" id=9]
+[ext_resource path="res://img/voltar.png" type="Texture" id=10]
+[ext_resource path="res://img/voltar_2.png" type="Texture" id=11]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1053.0
+margin_bottom = 627.0
+texture = ExtResource( 2 )
+
+[node name="corpo" type="TextureRect" parent="."]
+margin_left = -3.60498
+margin_top = -18.0251
+margin_right = 647.395
+margin_bottom = 888.975
+texture = ExtResource( 3 )
+
+[node name="2jogadores" type="TextureButton" parent="."]
+margin_left = 609.25
+margin_top = 57.6805
+margin_right = 1279.25
+margin_bottom = 173.681
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="3jogadores" type="TextureButton" parent="."]
+margin_left = 620.066
+margin_top = 234.327
+margin_right = 1290.07
+margin_bottom = 350.327
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+
+[node name="4jogadores" type="TextureButton" parent="."]
+margin_left = 605.646
+margin_top = 407.369
+margin_right = 1274.65
+margin_bottom = 523.369
+texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+
+[node name="voltar" type="TextureButton" parent="."]
+margin_left = 724.611
+margin_top = 605.646
+margin_right = 1182.61
+margin_bottom = 699.646
+texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
+[connection signal="pressed" from="2jogadores" to="." method="_on_2jogadores_pressed"]
+[connection signal="pressed" from="3jogadores" to="." method="_on_3jogadores_pressed"]
+[connection signal="pressed" from="4jogadores" to="." method="_on_4jogadores_pressed"]
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

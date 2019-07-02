@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Como é chamada a principal célula do intestino delgado?"
+answer = true
+resposta1 = "Caliciforme"
+resposta2 = "Macrófago"
+resposta3 = "Enterócito"
+resposta4 = "Ácinos"
+bloco = "1"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A doença celíaca é uma inflamação imunomediada devido a sensibilidade do indivíduo ao glúten, uma proteína do trigo. Isso provoca a destruição dos vilos do intestino delgado, que acarreta em sintomas como: perda de peso, diarreia, anemia e até atraso no crescimento. Basta cortar o glúten da dieta que os vilos sejam refeitos. Por que os vilos intestinais são importantes para reverter os sintomas?"
+resposta1 = "Para a secreção de nutrientes para o lúmen no trato gastrintestinal"
+resposta2 = "Para que a enzima responsável por degradar o glúten seja secretada até os vilos"
+resposta3 = "Para que ocorra a absorção do glúten e permitir sua digestão no interior do enterócito"
+resposta4 = "Para que ocorra a absorção dos demais nutrientes da dieta necessários para homeostase do organismo"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Endopeptidases, dipeptidases e dissacaridases, são enzimas que se encontram em uma célula do intestino delgado e são importantes para a quebra final de peptídeos (resultado da quebra de proteínas) e de dissacarídeos (resultado da quebra de carboidratos). Em qual local e célula essas enzimas estão?"
+answer = true
+resposta1 = "Na superfície das células caliciformes"
+resposta2 = "No interior da cripta de Liberkuhn"
+resposta3 = "Na borda em escova dos enterócitos"
+resposta4 = "Somente no citosol dos enterócitos"
+bloco = "1"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "As células caliciforme têm importância ao longo do trato gastrintestinal, qual é sua função?"
+resposta1 = "Secretar fator intrínseco"
+resposta2 = "Secretar muco"
+resposta3 = "Secretar enzimas digestivas"
+resposta4 = "Absorver nutrientes"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Qual a importância da mucina no intestino delgado?"
+answer = true
+resposta1 = "Lubrificar a luz intestinal e diminuir o atrito"
+resposta2 = "Aumentar a superfície de absorção"
+resposta3 = "Absorver B12"
+resposta4 = "Fazer a digestão dos alimentos"
+bloco = "0"

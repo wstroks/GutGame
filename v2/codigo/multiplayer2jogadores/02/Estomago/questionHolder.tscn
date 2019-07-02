@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "No sistema de sinalização parácrina, a célula endócrina está localizada próxima à célula alvo, deste modo, o hormônio alcança a célula alvo através de difusão no fluído intersticial ou pela circulação capilar. A histamina é considerada um importante sinalizador parácrino no trato gastrointestinal por quê?"
+resposta1 = "Estimula células enterocromafins a secretarem HCl"
+resposta2 = "Estimula células parietais a secretar HCl"
+resposta3 = "Bloqueia a liberação de HCl pelas células enterocromafins"
+resposta4 = "Bloqueia a liberação de HCl pelas células parietais"
+bloco = "0"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Nos períodos entre as refeições, a musculatura gástrica uma atividade contrátil intensa que visa empurrar qualquer material que não tenha deixado o estômago durante o processo digestivo. Qual nome é dado a esta atividade?"
+answer = true
+resposta1 = "Complexo motor mioelétrico secretório"
+resposta2 = "Atividade contrátil regular"
+resposta3 = "Complexo motor mioelétrico migratório"
+resposta4 = "Bomba pilórica"
+bloco = "1"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Em adultos saudáveis, o estômago secreta de 1 a 2L de suco gástrico por dia. Embora não seja considerado um órgão vital, um dos componentes secretados pelo estômago é essencial para a absorção da vitamina B12 no íleo e na ausência desta glicoproteina, desenvolve-se a anemia megalobástica. Qual o nome deste componente?"
+answer = true
+resposta1 = "Fator intrínseco"
+resposta2 = "Somatostatina"
+resposta3 = "Lipase gástrica"
+resposta4 = "HCl"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A bactéria Helicobacter pylori é uma das causas de úlceras gástricas. Esse microrganismo não chega a invadir a mucosa gástrica, entretanto secreta proteínas que induzem uma resposta imunológica, o que resulta numa gastrite superficial que pode evoluir para uma gastrite crônica. Que patologia pode ser associada a esta bactéria e a cronificação da gastrite?"
+answer = true
+resposta1 = "Câncer gástrico"
+resposta2 = "Anemia perniciosa"
+resposta3 = "Esquistossomose"
+resposta4 = "Colite"
+bloco = "0"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O estômago possui três funções básicas. A primeira é o armazenamento dos alimentos ingeridos, regulando a passagem para o intestino delgado. A segunda é a proteção contra muitos microrganismos que causam doenças por meio do pH ácido. Qual a terceira função do estômago?"
+resposta1 = "Absorção de nutrientes"
+resposta2 = "Secreção da bile"
+resposta3 = "Evacuação"
+resposta4 = "Digestão"
+bloco = "1"

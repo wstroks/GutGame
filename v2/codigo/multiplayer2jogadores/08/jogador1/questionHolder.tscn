@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O Movimento de Massa ocorre de 1 a 3 vezes por dia, sendo um movimento propulsivo, percorre o cólon e visa conduzir o conteúdo colônico em direção ao reto. Ele resulta dos Reflexos Ortotáxico, Gastrocólico e Gastroileal. Como surge o Reflexo Gastrocólico?"
+resposta1 = "Resposta de mudança na posição de horizontal para vertical"
+resposta2 = "Resposta ao desjejum após acordar, o cólon é estimulado pela atividade secretora e contrátil do estômago"
+resposta3 = "Resposta pela passagem do conteúdo intestinal pelo jejuno e íleo"
+resposta4 = "Resposta a salivação e mastigação"
+bloco = "0"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Indivíduos saudáveis que possuem uma dieta equilibrada excretam pouca gordura nas fezes, cerca de 3 a 4g diários. Essa gordura é decorrente da fermentação bacteriana e de células descamadas. Quando ocorrem alterações na digestão lipídica, na secreção biliar ou alterações na área absortiva do intestino delgado, essa quantidade de lipídeos nas fezes aumenta. Que nome é dado à exceção aumentada de gordura nas fezes? (Considere aumento acima de 7g de gordura por 150g de fezes/dia)"
+resposta1 = "Disenteria"
+resposta2 = "Esteatorreia"
+resposta3 = "Leucócitos nas fezes"
+resposta4 = "Lipodiarreia"
+bloco = "0"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O cólon não realiza hidrólise enzimática de nutrientes, uma vez que não possui enzimas produzidas pelas células ou enzimas lançadas no lúmen. Apesar disso no cólon ocorre a secreção de dois compostos, quais são eles?"
+resposta1 = "NaCl e Cl-"
+resposta2 = "K+ e HCO3-"
+resposta3 = "Bilirrubina e HCO3-"
+resposta4 = "K+ e NaCl"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A presença de sangue nas fezes pode ser causadas por lesões em qualquer parte do trato gastointestinal. Esse sangue pode ser aparente ou oculto, tendo coloração mais enegrecida quando relacionado a uma lesão na parte inicial do trato gastointestinal ou coloração mais próxima do sangue vermelho vivo quando relacionado a lesões na porção terminal do mesmo. Que tipos de exames são utilizados para identificação de sangue nas fezes?"
+resposta1 = "Exame de sangue"
+resposta2 = "Tomografia computadorizada"
+resposta3 = "Exame de urina"
+resposta4 = "Análise macroscópica e pesquisa de sangue oculto nas fezes"
+bloco = "1"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O muco é uma substância glicoproteica produzida por um conjunto de células especializadas para este fim: as células caliciformes. Qual a função do muco no cólon?"
+resposta1 = "Matar bactérias patogênicas"
+resposta2 = "Facilitar o deslocamento do conteúdo colônico e evitar agressões físicas à mucosa"
+resposta3 = "Facilitar a absorção de proteínas e a degradação das mesmas"
+resposta4 = "Facilitar a absorção de nutrientes como carboidratos"
+bloco = "0"

@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://moduloPais/voceSabia/diretora/Quiz/questionaTexto.gd" type="Script" id=1]
+
+[node name="questionHolder" type="Node"]
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A bile é importante para a degradação de quais moléculas?"
+answer = true
+resposta1 = "Aminoácidos"
+resposta2 = "Carboidratos"
+resposta3 = "Lipídeos"
+resposta4 = "Nucleotídeos"
+bloco = "1"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A bile é continuamente secretada pelas células do fígado, mas só é liberada na luz do trato gastrointestinal de forma significante durante a digestão. Quando o organismo não está digerindo os alimentos, onde a bile é armazenada?"
+resposta1 = "No próprio fígado"
+resposta2 = "Na vesícula biliar"
+resposta3 = "No estômago"
+resposta4 = "No pâncreas"
+bloco = "0"
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "Considerando que o hormônio chamado colecistocinina é o principal estímulo para liberação da bile no intestino, quais são as principais moléculas que estimulam a produção de colecistocinina?"
+resposta1 = "Carboidratos"
+resposta2 = "Lipídeos"
+resposta3 = "Aminoácidos"
+resposta4 = "Insulina"
+bloco = "0"
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "O aumento dos níveis de bilirrubina no sangue causa uma condição caracterizada por uma coloração amarelada principalmente na pele e na esclera. As causas dessa condição podem ser aumento da destruição de hemácias, obstrução dos ductos biliares ou lesões hepáticas. Qual é o nome dessa condição?"
+answer = true
+resposta1 = "Diabetes"
+resposta2 = "Fibrose cística"
+resposta3 = "Icterícia"
+resposta4 = "Hepatite"
+bloco = "1"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+fact = "A bile tem, além das funções digestiva, a função de ser uma das vias de excreções de bilirrubina. A bilirrubina é o produto de degradação da hemoglobina, que está presente nos(as):"
+resposta1 = "Músculos"
+resposta2 = "Hemácias"
+resposta3 = "Rins"
+resposta4 = "Tecido adiposo"
+bloco = "0"
