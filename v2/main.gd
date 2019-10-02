@@ -31,3 +31,7 @@ func _on_sair_pressed():
 	audio_player.play_click()
 	
 	pass # Replace with function body.
+
+
+func _on_som_pressed():
+	pass # Replace with function body.

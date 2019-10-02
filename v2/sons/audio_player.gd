@@ -4,6 +4,7 @@ extends Node
 # var a = 2
 # var b = "textvar"v
 var a= true
+var b=0
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
@@ -16,9 +17,4 @@ func play(sample_name):
 func play_click():
 	get_node("click").play()
 	pass
-	
-func stop_st():
-	 a=false;
-	
-	
 

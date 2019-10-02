@@ -49,6 +49,12 @@ font_data = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+questionTextPath = NodePath("questionText")
+trueAnswerPath = NodePath("answerLayer/trueAnswer")
+falseAnswerPath = NodePath("answerLayer/falseAnswer")
+animatorPath = NodePath("animator")
+timerPath = NodePath("Timer")
+questionHolderPath = NodePath("questionHolder")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

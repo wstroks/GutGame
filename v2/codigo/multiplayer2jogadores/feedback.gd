@@ -59,7 +59,7 @@ func _on_Seguir_pressed():
 	if(b==0):
 		get_node("corpo").show()
 		get_node("sentimento").hide()
-		get_node("Label").set_text("Preparado par ao próximo Turno?!")
+		get_node("Label").set_text("Preparado para o próximo Turno?!")
 		get_node("jogador1-casa"+str(tabuleiro1)).show()
 		get_node("jogador2-casa"+str(tabuleiro2)).show()
 		

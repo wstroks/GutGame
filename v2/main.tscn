@@ -45,6 +45,7 @@ texture_hover = ExtResource( 6 )
 stretch_mode = 1
 
 [node name="sair" type="TextureButton" parent="."]
+visible = false
 margin_left = 745.5
 margin_top = 624.9
 margin_right = 1203.5
@@ -63,3 +64,4 @@ stretch_mode = 2
 [connection signal="pressed" from="jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="sobr" to="." method="_on_sobr_pressed"]
 [connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="som" to="." method="_on_som_pressed"]
