@@ -5,22 +5,25 @@ extends Control
 # var b = "text"
 var a=0
 var b=0
+var erros=0
 var score=new_script._singleInfoScore()
 var estado=new_script._singleEstado()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	score=new_script._singleInfoScore()
 	estado=new_script._singleEstado()
+	erros=5-score
+	get_node("Label2").set_text("Quantidade de Erros/Acertos\n Acertos: "+str(score)+"       Erros: "+str(erros))
 	
 	
 	if(score<3):
 	 	get_node("jogarNovamente3").show()
 	 	get_node("sentimento").set_texture(load("res://img/triste_feed.png"))
-	 	get_node("Label").set_text("Você não acertou o número minimo para avançar, tente novamente para passar para próxima fase") 
+	 	get_node("Label").set_text("Você não acertou o número minimo para terminar o jogo GutGame!!") 
 		
 	if(score>=3):
 		get_node("Seguir").show()
-		get_node("Label").set_text("Parábens você Completou todo o jogo do Gutgame e com isso obteve conhecimento a respeito de partes do corpo de suma importância!!") 
+		get_node("Label").set_text("Parábens você Completou todo o jogo do Gutgame e com isso obteve conhecimento a respeito de partes do corpo!!") 
 	pass # Replace with function body.
 	if(b==1):
 		get_node("Seguir").hide()
@@ -35,7 +38,9 @@ func _on_Seguir_pressed():
 	if(b==0):
 		get_node("corpo").show()
 		get_node("sentimento").hide()
-		get_node("Label").set_text("Retorne ao Menu inicial e comece um nova jornada!!")
+		get_node("Label2").hide()
+		get_node("TextureRect2").hide()
+		get_node("Label").set_text("Retorne ao Menu inicial e começe uma nova jornada!!")
 		get_node("Seguir").hide()
 		
 	
@@ -55,6 +60,8 @@ func _on_jogarNovamente3_pressed():
 		get_node("corpo").show()
 		get_node("sentimento").hide()
 		get_node("jogarNovamente3").hide()
+		get_node("Label2").hide()
+		get_node("TextureRect2").hide()
 		get_node("Label").set_text("Você ainda está na mesma posição 8, que corresponde ao Intestino Grosso!")
 		get_node("Seguir2").show()
 		get_node("seta1").show()

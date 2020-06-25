@@ -5,12 +5,15 @@ extends Control
 # var b = "text"
 var a=0
 var b=0
+var erros=0
 var score=new_script._singleInfoScore()
 var estado=new_script._singleEstado()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	score=new_script._singleInfoScore()
 	estado=new_script._singleEstado()
+	erros=5-score
+	get_node("Label2").set_text("Quantidade de Erros/Acertos\n Acertos: "+str(score)+"       Erros: "+str(erros))
 	
 	
 	if(score<3):
@@ -33,6 +36,8 @@ func _on_Seguir_pressed():
 	if(b==0):
 		get_node("corpo").show()
 		get_node("sentimento").hide()
+		get_node("Label2").hide()
+		get_node("TextureRect2").hide()
 		get_node("Label").set_text("Agora estamos avançando para casa 5 do Intestino Delgado, preparado?!")
 		get_node("seta2").show()
 		
@@ -54,6 +59,8 @@ func _on_jogarNovamente3_pressed():
 		get_node("corpo").show()
 		get_node("sentimento").hide()
 		get_node("jogarNovamente3").hide()
+		get_node("Label2").hide()
+		get_node("TextureRect2").hide()
 		get_node("Label").set_text("Você ainda está na mesma posição 4, que corresponde ao Intestino Delgado!")
 		get_node("Seguir2").show()
 		get_node("seta1").show()

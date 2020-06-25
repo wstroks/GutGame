@@ -11,9 +11,9 @@ func _ready():
 	
 	pass
 	
-func play(sample_name):
-	get_node("sample_player").play(sample_name)
-	pass
+#func play(sample_name):
+#get_node("sample_player").play(sample_name)
+#	pass
 func play_click():
 	get_node("click").play()
 	pass

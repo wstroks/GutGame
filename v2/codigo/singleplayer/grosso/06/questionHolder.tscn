@@ -20,7 +20,7 @@ fact = "Quais são os principais mecanismos protetores do trato gastrointestinal
 answer = true
 resposta1 = "Produção de ácido, vômito e constipação"
 resposta2 = "Produção de muco, azia e constipação"
-resposta3 = "Produção de muco, vômito e diarreia"
+resposta3 = "Produção de muco e ácido do estômago, vômito e diarreia."
 resposta4 = "Produção de muco, vômito e constipação"
 bloco = "1"
 

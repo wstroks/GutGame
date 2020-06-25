@@ -8,7 +8,7 @@
 script = ExtResource( 1 )
 fact = "O Movimento de Massa ocorre de 1 a 3 vezes por dia, sendo um movimento propulsivo, percorre o cólon e visa conduzir o conteúdo colônico em direção ao reto. Ele resulta dos Reflexos Ortotáxico, Gastrocólico e Gastroileal. Como surge o Reflexo Gastrocólico?"
 resposta1 = "Resposta de mudança na posição de horizontal para vertical"
-resposta2 = "Resposta ao desjejum após acordar, o cólon é estimulado pela atividade secretora e contrátil do estômago"
+resposta2 = "Resposta ao desjejum, o cólon é estimulado pela atividade secretora e contrátil do estômago"
 resposta3 = "Resposta pela passagem do conteúdo intestinal pelo jejuno e íleo"
 resposta4 = "Resposta a salivação e mastigação"
 bloco = "0"

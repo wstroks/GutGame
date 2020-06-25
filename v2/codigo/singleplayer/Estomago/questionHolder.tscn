@@ -6,7 +6,7 @@
 
 [node name="question2" type="Node" parent="."]
 script = ExtResource( 1 )
-fact = "No sistema de sinalização parácrina, a célula endócrina está localizada próxima à célula alvo, deste modo, o hormônio alcança a célula alvo através de difusão no fluído intersticial ou pela circulação capilar. A histamina é considerada um importante sinalizador parácrino no trato gastrointestinal por quê?"
+fact = "No sistema de sinalização parácrina, a célula endócrina está localizada próxima à célula alvo, deste modo, a molécula sinalizadora secretada alcança a célula alvo através de difusão no fluído intersticial ou pela circulação capilar. A histamina é considerada um importante sinalizador parácrino no trato gastrointestinal por quê?"
 resposta1 = "Estimula células enterocromafins a secretarem HCl"
 resposta2 = "Estimula células parietais a secretar HCl"
 resposta3 = "Bloqueia a liberação de HCl pelas células enterocromafins"

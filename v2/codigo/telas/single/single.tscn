@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://codigo/telas/single/single.gd" type="Script" id=1]
-[ext_resource path="res://img/Escolha_single.png" type="Texture" id=2]
+[ext_resource path="res://img/tela_nova_single.png" type="Texture" id=2]
 [ext_resource path="res://img/figadu.png" type="Texture" id=3]
 [ext_resource path="res://img/figadu_2.png" type="Texture" id=4]
 [ext_resource path="res://img/boca_1.png" type="Texture" id=5]
@@ -20,6 +20,7 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="figado" type="TextureButton" parent="."]
+visible = false
 margin_left = 115.361
 margin_top = 191.067
 margin_right = 526.361
@@ -28,18 +29,18 @@ texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
 
 [node name="boca" type="TextureButton" parent="."]
-margin_left = 753.452
-margin_top = 100.941
-margin_right = 1385.45
-margin_bottom = 197.941
+margin_left = 627.276
+margin_top = 68.4957
+margin_right = 1259.28
+margin_bottom = 165.496
 texture_normal = ExtResource( 5 )
 texture_hover = ExtResource( 6 )
 
 [node name="voltar" type="TextureButton" parent="."]
-margin_left = 901.258
-margin_top = 652.511
-margin_right = 1359.26
-margin_bottom = 746.511
+margin_left = 778.687
+margin_top = 641.696
+margin_right = 1236.69
+margin_bottom = 735.696
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
 [connection signal="pressed" from="figado" to="." method="_on_figado_pressed"]
