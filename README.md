@@ -29,7 +29,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 </h2>
 
 - [Aplicativo GutGame](https://play.google.com/store/apps/details?id=lenda.gutgame)
-
+- [Versão web desktop com single player e multiplayer v1](https://gutgame.herokuapp.com/)
+- [Versão web desktop só single player v2 com correções de erros](https://gutgamev2.herokuapp.com/)
 <h2 title='#Apresentacao'>
    Artigos
 </h2>
@@ -38,7 +39,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Execução do projeto
 
-Na pasta "v3" do projeto, você pode executar:
+Na pasta "v2" do projeto, você pode executar:
 
 ### Basta instalar a Godot Engine 3.0
 
